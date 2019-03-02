@@ -10,7 +10,11 @@ Redux in React Native
 - ```Changes are made with pure functions```: Để chỉ rõ state tree được thay đổi bởi 1 action bạn phải viết pure reducers.
 
 ## Cách thức hoạt động
-- **Actions**: là những chỉ thị gồm thuộc tính bắt buộc là ```type``` (**chỉ có nhiệm vụ đưa ra chỉ thị cho reducers chứ không thực hiện**) 
-- **Reducers**: là một hành động, nhận chỉ thị từ actions
+- **Actions**: là những chỉ thị gồm thuộc tính bắt buộc là ```type``` (**chỉ có nhiệm vụ đưa ra chỉ thị cho reducers chứ không thực hiện**). Actions bao gồm: 
+    *type*: tên chỉ thị.
+    *item*: phần tử thao tác (ví dụ: add new, ... sẽ khai báo tại đây).
+- **Reducers**: là một hành động, nhận chỉ thị từ actions và hành động này trả về 1 state. Có 2 tham số:
+    *old state*: là những state trước đó.
+    *chỉ thị (action)* : dùng để thay thế state cũ và tính ra state mới.
 - **State**: lưu trạng thái của ung dụng
 - **Store**: là 1 đối tượng quản lí reducer và state (vì state là private) không thể thay đổi được mà phải thông qua đối tượng quản lý nó chính là Store.
