@@ -16,5 +16,8 @@ Redux in React Native
 - **Reducers**: là một hành động, nhận chỉ thị từ actions và hành động này trả về 1 state. Có 2 tham số:
     - *old state*: là những state trước đó.
     - *chỉ thị (action)* : dùng để thay thế state cũ và tính ra state mới.
-- **State**: lưu trạng thái của ung dụng
-- **Store**: là 1 đối tượng quản lí reducer và state (vì state là private) không thể thay đổi được mà phải thông qua đối tượng quản lý nó chính là Store.
+- **State**: lưu trạng thái của ứng dụng
+- **Store**: là 1 đối tượng quản lí reducer và state (vì state là private) không thể thay đổi được mà phải thông qua đối tượng quản lý nó chính là Store. Nó có 3 phương thức sau:
+    - *getState()*: Giúp lấy ra state hiện tại
+    - *dispatch(action)*: Thực hiện gọi 1 action
+    - *subscrible(listener)*:Nó có vai trò cực quan trọng, luôn luôn lắng nghe xem có thay đổi gì ko rồi ngay lập tức cập nhật ra View
