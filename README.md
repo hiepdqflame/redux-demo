@@ -21,4 +21,4 @@ Redux in React Native
     - *getState()*: Giúp lấy ra state hiện tại
     - *dispatch(action)*: Thực hiện gọi 1 action
     - *subscrible(listener)*:Nó có vai trò cực quan trọng, luôn luôn lắng nghe xem có thay đổi gì ko rồi ngay lập tức cập nhật ra View
-## Flow: actions => reducer
+## Flow redux: ```action → reducer → store → View``
